@@ -10,7 +10,7 @@ const About = () => {
             </div>
             <div className="about-content">
                 <div className="about-left">
-                    <img src="images/pfp.jpg" alt="Profile picture not available" />
+                    <img src="/portfolio/images/pfp.jpg" alt="Profile picture not available" />
                 </div>
                 <div className="about-right">
                     <p>
@@ -22,7 +22,7 @@ const About = () => {
                     <p>
                         Beyond data and code, I enjoy reading books and comics alike, getting lost in story-rich RPGs, and exploring new running trails. Whether it's fine-tuning a neural network or shading a character panel, I thrive on problem-solving across both logic and creativity. Feel free to explore my work or reach out! I'm always open to connections and collaborations. If you're interested in my work, feel free to reach out!
                     </p>
-                    <a href="Resume.pdf" target="_blank">
+                    <a href="/portfolio/Resume.pdf" target="_blank">
                         <ButtonDark text="View Resume" />
                     </a>
                 </div>

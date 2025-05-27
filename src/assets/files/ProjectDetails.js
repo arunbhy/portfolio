@@ -20,7 +20,7 @@ const projectList = [
         subtitle: `Personalized Reading: Predicting Book Ratings with Cosine-Similarity k-NN`,
         time: `November 2024 - April 2025`,
         summary: `Processed 1M ratings from the BX-Books dataset; cleaned and filtered to 200k users and 40k books. Implemented both User-User and Item-Item Collaborative Filtering with cosine similarity via Surprise. Tuned neighborhood size (k=10–100); Item-Item with k=60 yielded MAD of 0.74. Analyzed variance with confidence ribbons in Matplotlib. Recommendations were showcased in a Streamlit prototype, complete with book cover fetch via ISBN.`,
-        image: `images/book_recomendation.png`,
+        image: `/portfolio/images/book_recomendation.png`,
         link: `https://github.com/kautilyaa/BookWorm`
     },
     {
@@ -28,7 +28,7 @@ const projectList = [
         subtitle: `Inbox to Insight: Smart Email Agent Built for Hackathon Excellence`,
         time: `Smart India Hackathon 2019`,
         summary: `Engineered a Python-based IMAP/SMTP bot that parses incoming support emails using NLTK keyword classification. Automatically requests missing ticket fields via email replies. Stored tickets in SQLite with auto-prioritization and owner assignment logic. Deployed for a national sponsor, saving ~15 staff-hours/week. Earned First Prize among 300+ teams in Smart India Hackathon 2019.`,
-        image: `images/ticket_customer.png`,
+        image: `/portfolio/images/ticket_customer.png`,
         link: `https://github.com/kautilyaa/ticket-creation-customer-support`
     }
 ];

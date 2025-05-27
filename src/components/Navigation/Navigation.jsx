@@ -10,7 +10,7 @@ const Navigation = () => {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <div className="d-flex align-items-center">
-          <Navbar.Brand href="#home"><img src="images/logo.webp" alt="Logo" className="navbar-logo" /></Navbar.Brand>
+          <Navbar.Brand href="#home"><img src="/portfolio/images/logo.webp" alt="Logo" className="navbar-logo" /></Navbar.Brand>
           <ThemeToggle />
         </div>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -25,7 +25,8 @@ const Navigation = () => {
             <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#education">Education</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link href="#achievements">Achievements</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>            
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -34,3 +35,6 @@ const Navigation = () => {
 }
 
 export default Navigation;
+
+
+

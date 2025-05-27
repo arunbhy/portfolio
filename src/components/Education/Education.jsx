@@ -21,7 +21,7 @@ const Education = () => {
 
             <div className="education-card-row">
                 <div id="masters" className="degree">
-                    <img src="images/umd.jpeg" alt="University of Maryland" className="degree-img" />
+                    <img src="/portfolio/images/umd.jpeg" alt="University of Maryland" className="degree-img" />
                     <div className="degree-header">
                         <h2>University of Maryland</h2>
                         <span className="degree-date">August 2024 - Present</span>
@@ -34,8 +34,11 @@ const Education = () => {
                         </div>
                         {showMastersCoursework && (
                             <ListGroup variant="flush" className="coursework-list">
-                                <ListGroup.Item className="coursework-item">Natural Language Processing</ListGroup.Item>
-                                <ListGroup.Item className="coursework-item">Computer Vision</ListGroup.Item>
+                                <ListGroup.Item className="coursework-item">Machine Learning</ListGroup.Item>
+                                <ListGroup.Item className="coursework-item">Deep Learning</ListGroup.Item>
+                                {/* <ListGroup.Item className="coursework-item">Computer Vision</ListGroup.Item> */}
+                                {/* <ListGroup.Item className="coursework-item">Natural Language Processing</ListGroup.Item> */}
+                                {/* <ListGroup.Item className="coursework-item">Computer Vision</ListGroup.Item> */}
                                 <ListGroup.Item className="coursework-item">Data Representation and Modeling</ListGroup.Item>
                                 <ListGroup.Item className="coursework-item">Big Data Systems</ListGroup.Item>
                                 <ListGroup.Item className="coursework-item">Algorithms of Data Science</ListGroup.Item>
@@ -45,7 +48,7 @@ const Education = () => {
                 </div>
 
                 <div id="bachelors" className="degree">
-                    <img src="images/vit.jpeg" alt="Vellore Institute of Technology" className="degree-img" />
+                    <img src="/portfolio/images/vit.jpeg" alt="Vellore Institute of Technology" className="degree-img" />
                     <div className="degree-header">
                         <h2>Vellore Institute of Technology</h2>
                         <span className="degree-date">July 2017 - June 2021</span>

@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with React and Vite, featuring a clean design and smooth animations.
+This is my personal portfolio website built with React and Vite, deployed using GitHub Pages.
 
 ## Features
 
@@ -11,42 +11,91 @@ A modern, responsive portfolio website built with React and Vite, featuring a cl
 - 🔗 Social media integration
 - 🎯 Smooth scrolling navigation
 
-## Tech Stack
+## 🚀 Deployment
 
-- React.js
-- Vite
-- Bootstrap
-- CSS3
-- React Type Animation
-- React Bootstrap
-- React Anchor Link Smooth Scroll
+The website is automatically deployed to GitHub Pages whenever changes are pushed to the main branch. The deployment process is handled by the `gh-pages` package.
 
-## Prerequisites
+### Deployment Steps
 
-Before you begin, ensure you have the following installed:
-- Node.js (v14.0.0 or higher)
-- npm (v6.0.0 or higher)
-- Git
+1. Make your changes to the codebase
+2. Run the following commands:
+   ```bash
+   npm run build
+   npm run deploy
+   ```
 
-## Installation
+The site will be deployed to: https://arunbhy.github.io/portfolio/
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm (comes with Node.js)
+
+### Setup
 
 1. Clone the repository:
-```bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio
-```
+   ```bash
+   git clone https://github.com/arunbhy/portfolio.git
+   cd portfolio
+   ```
 
 2. Install dependencies:
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Start the development server:
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
-The site will be available at `http://localhost:5173`
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run deploy` - Deploy to GitHub Pages
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+
+## 📦 Dependencies
+
+### Main Dependencies
+- React 18
+- Bootstrap 5
+- React Bootstrap
+- React Anchor Link Smooth Scroll
+- React Type Animation
+
+### Development Dependencies
+- Vite
+- ESLint
+- gh-pages
+
+## 🔧 Troubleshooting
+
+If you encounter any issues with deployment:
+
+1. Clean the gh-pages cache:
+   ```bash
+   rm -rf node_modules/.cache/gh-pages
+   ```
+
+2. Clean git references:
+   ```bash
+   git gc --prune=now
+   git remote prune origin
+   ```
+
+3. Try deploying again:
+   ```bash
+   npm run deploy
+   ```
+
+## 📝 License
+
+This project is open source and available under the MIT License.
 
 ## Project Structure
 
@@ -60,56 +109,6 @@ portfolio/
 │   └── main.jsx       # Entry point
 ├── public/            # Static files
 └── index.html         # HTML template
-```
-
-## Deployment Guide
-
-### Deploying to GitHub Pages
-
-1. Install GitHub Pages package:
-```bash
-npm install gh-pages --save-dev
-```
-
-2. Update package.json (already configured):
-```json
-{
-  "homepage": "https://your-username.github.io/portfolio/",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  }
-}
-```
-
-3. Build and deploy:
-```bash
-npm run build
-npm run deploy
-```
-
-4. Configure GitHub Repository:
-   - Go to repository Settings > Pages
-   - Select "gh-pages" branch as source
-   - Wait for deployment (usually takes a few minutes)
-
-### Alternative Deployment Options
-
-#### Netlify
-1. Create a Netlify account
-2. Connect your GitHub repository
-3. Configure build settings:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-
-#### Vercel
-1. Install Vercel CLI:
-```bash
-npm install -g vercel
-```
-2. Deploy:
-```bash
-vercel
 ```
 
 ## Customization
@@ -133,12 +132,8 @@ vercel
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
 
-Project Link: [https://github.com/your-username/portfolio](https://github.com/your-username/portfolio) 
+Project Link: [https://github.com/arunbhy/portfolio](https://github.com/arunbhy/portfolio) 

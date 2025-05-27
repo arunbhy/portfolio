@@ -1,0 +1,32 @@
+git branch -a | cat
+
+
+git gc --prune=now && git remote prune origin
+
+
+rm -rf node_modules/.cache/gh-pages && npm run deploy
+
+npm run deploy
+
+git branch -a | cat
+
+rm -rf node_modules/.cache/gh-pages && git push origin --delete gh-pages && npm run deploy
+
+git config --global http.postBuffer 524288000 && npm run deploy
+
+git branch -D gh-pages 2>/dev/null || true && npm run deploy -- --force
+
+npx gh-pages -d dist --no-history
+
+
+git push origin --delete gh-pages && git remote prune origin && rm -rf node_modules/.cache/gh-pages && npm run deploy
+
+# Clean up any existing gh-pages references
+rm -rf node_modules/.cache/gh-pages
+git remote prune origin
+
+# Increase Git buffer size
+git config --global http.postBuffer 524288000
+
+# Deploy with a clean slate
+npm run deploy
